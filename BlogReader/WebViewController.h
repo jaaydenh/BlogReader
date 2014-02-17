@@ -10,4 +10,7 @@
 
 @interface WebViewController : UIViewController
 
+@property (strong, nonatomic) NSURL *blogPostURL;
+@property (strong, nonatomic) IBOutlet UIWebView *webView;
+
 @end

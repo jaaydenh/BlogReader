@@ -19,6 +19,10 @@
 		D0E05A4C18A86CD800D0926E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E05A3418A86CD800D0926E /* UIKit.framework */; };
 		D0E05A5418A86CD800D0926E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0E05A5218A86CD800D0926E /* InfoPlist.strings */; };
 		D0E05A5618A86CD800D0926E /* BlogReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E05A5518A86CD800D0926E /* BlogReaderTests.m */; };
+		D0E05A6018A86D1700D0926E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E05A5F18A86D1700D0926E /* MainStoryboard.storyboard */; };
+		D0E05A6318A86FBE00D0926E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E05A6218A86FBE00D0926E /* TableViewController.m */; };
+		D0E05A6618A8B45A00D0926E /* BlogPost.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E05A6518A8B45A00D0926E /* BlogPost.m */; };
+		D0E05AAA18B153DD00D0926E /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E05AA918B153DD00D0926E /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,13 @@
 		D0E05A5118A86CD800D0926E /* BlogReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlogReaderTests-Info.plist"; sourceTree = "<group>"; };
 		D0E05A5318A86CD800D0926E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D0E05A5518A86CD800D0926E /* BlogReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlogReaderTests.m; sourceTree = "<group>"; };
+		D0E05A5F18A86D1700D0926E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		D0E05A6118A86FBE00D0926E /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ../TableViewController.h; sourceTree = "<group>"; };
+		D0E05A6218A86FBE00D0926E /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
+		D0E05A6418A8B45A00D0926E /* BlogPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogPost.h; sourceTree = "<group>"; };
+		D0E05A6518A8B45A00D0926E /* BlogPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogPost.m; sourceTree = "<group>"; };
+		D0E05AA818B153DD00D0926E /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		D0E05AA918B153DD00D0926E /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +118,17 @@
 		D0E05A3618A86CD800D0926E /* BlogReader */ = {
 			isa = PBXGroup;
 			children = (
+				D0E05A6118A86FBE00D0926E /* TableViewController.h */,
+				D0E05A6218A86FBE00D0926E /* TableViewController.m */,
 				D0E05A3F18A86CD800D0926E /* AppDelegate.h */,
 				D0E05A4018A86CD800D0926E /* AppDelegate.m */,
 				D0E05A4218A86CD800D0926E /* Images.xcassets */,
 				D0E05A3718A86CD800D0926E /* Supporting Files */,
+				D0E05A5F18A86D1700D0926E /* MainStoryboard.storyboard */,
+				D0E05A6418A8B45A00D0926E /* BlogPost.h */,
+				D0E05A6518A8B45A00D0926E /* BlogPost.m */,
+				D0E05AA818B153DD00D0926E /* WebViewController.h */,
+				D0E05AA918B153DD00D0926E /* WebViewController.m */,
 			);
 			path = BlogReader;
 			sourceTree = "<group>";
@@ -219,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E05A6018A86D1700D0926E /* MainStoryboard.storyboard in Resources */,
 				D0E05A3B18A86CD800D0926E /* InfoPlist.strings in Resources */,
 				D0E05A4318A86CD800D0926E /* Images.xcassets in Resources */,
 			);
@@ -240,7 +259,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0E05A4118A86CD800D0926E /* AppDelegate.m in Sources */,
+				D0E05AAA18B153DD00D0926E /* WebViewController.m in Sources */,
+				D0E05A6318A86FBE00D0926E /* TableViewController.m in Sources */,
 				D0E05A3D18A86CD800D0926E /* main.m in Sources */,
+				D0E05A6618A8B45A00D0926E /* BlogPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +384,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BlogReader/BlogReader-Prefix.pch";
 				INFOPLIST_FILE = "BlogReader/BlogReader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -375,6 +398,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BlogReader/BlogReader-Prefix.pch";
 				INFOPLIST_FILE = "BlogReader/BlogReader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

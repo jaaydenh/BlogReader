@@ -10,4 +10,15 @@
 
 @interface BlogPost : NSObject
 
+@property (strong,nonatomic) NSString *title;
+@property (strong,nonatomic) NSString *author;
+@property (strong,nonatomic) NSString *thumbnail;
+@property (strong,nonatomic) NSString *date;
+@property (strong,nonatomic) NSURL *url;
+
+-(id) initWithTitle:(NSString *)title;
++(id) blogPostWithTitle:(NSString *)title;
+
+-(NSURL *) thumbnailURL;
+-(NSString *) formattedDate;
 @end
